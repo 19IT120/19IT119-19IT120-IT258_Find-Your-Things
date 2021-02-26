@@ -8,14 +8,11 @@ body {
     background: #f7f6ff;
 }
 
-.container {
-    margin-top: 100px;
-    padding: 32px;
-}
-
 .select-box {
+    margin-top: -10px;
+    margin-left: 00px;
     display: flex;
-    width: 400px;
+    width: 250px;
     flex-direction: column;
 }
 
@@ -66,7 +63,7 @@ body {
 
 .select-box .options-container::-webkit-scrollbar {
     width: 8px;
-    background: #0d141f;
+    background: transparent;
     border-radius: 0 8px 8px 0;
 }
 
@@ -101,6 +98,7 @@ li {
     list-style: none;
     float: right;
     padding: 33px 20px;
+    margin-top: -7px;
 }
 
 header {
@@ -128,10 +126,10 @@ header {
 
 input {
     border: 2px black solid;
-    height: 20px;
+    height: 30px;
     width: 500px;
-    margin-left: 20px;
-    margin-top: 25px;
+    margin-left: 22px;
+    margin-top: 20px;
 }
 
 .button:hover {
