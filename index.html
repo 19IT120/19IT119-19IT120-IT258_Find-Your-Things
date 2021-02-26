@@ -1,33 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Progate</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>GTCoding</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <div class="header">
+    <header>
         <div class="header-logo">SGP</div>
         <div class="header-list">
 
             <ul>
                 <input type="text" name="box" placeholder="search">
-                <li>sign in</li>
-                <li>Login</li>
-                <li>Contact us</li>
+                <li>
+                    <a href="#" id="button">LOGIN</a>
+                </li>
+                <li>
+                    <a href="#" id="about">ABOUT</a>
+                </li>
+                <li>
+                    <a href="#" id="contact">CONTACT</a>
+                </li>
             </ul>
+
         </div>
-    </div>
+
+        <div class="popup">
+            <div class="popup-content">
+                <img src="close.png" alt="" class="close">
+                <input type="text" placeholder="Username">
+                <input type="Password" placeholder="Password">
+                <a href="#" class="button"> LOGIN </a>
+            </div>
+        </div>
+    </header>
+
 
     <div class="main">
+
+        <div class="container">
+
+            <div class="select-box">
+                <div class="options-container">
+                    <div class="option">
+                        <input type="radio" class="radio" id="automobiles" name="category" />
+                        <label for="automobiles">ALL</label>
+                    </div>
+
+                    <div class="option">
+                        <input type="radio" class="radio" id="film" name="category" />
+                        <label for="film">BUY</label>
+                    </div>
+
+                    <div class="option">
+                        <input type="radio" class="radio" id="science" name="category" />
+                        <label for="science">SELL</label>
+                    </div>
+
+                    <div class="option">
+                        <input type="radio" class="radio" id="art" name="category" />
+                        <label for="art">RENT</label>
+                    </div>
+
+
+                </div>
+
+                <div class="selected">
+                    Select Category
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.getElementById("button").addEventListener("click", function() {
+                document.querySelector(".popup").style.display = "flex";
+            })
+
+            document.querySelector(".close").addEventListener("click", function() {
+                document.querySelector(".popup").style.display = "none";
+            })
+        </script>
 
     </div>
 
     <div class="footer">
 
     </div>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
