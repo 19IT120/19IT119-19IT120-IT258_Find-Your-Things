@@ -155,9 +155,9 @@ button:hover {
 }
 
 .popup-content {
-    height: 300px;
+    height: 200px;
     width: 500px;
-    background: #fff;
+    background: rgb(95, 182, 182);
     padding: 20px;
     border-radius: 5px;
     position: relative;
